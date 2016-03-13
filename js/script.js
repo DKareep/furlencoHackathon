@@ -31,7 +31,7 @@ var fa = (function () {
                 var refCode = newLocation.substr(newLocation.indexOf("?ref=") + 5).trim();
                 eventPusher('ref', refCode);
             } else {
-                var page = newLocation.substr(newLocation.indexOf("/index.html") + 11).trim();
+                var page = newLocation.substr(newLocation.indexOf(".html") + 5).trim();
                 console.log(page);
                 eventPusher('page', page);
             }
