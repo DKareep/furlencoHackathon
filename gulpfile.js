@@ -14,14 +14,14 @@ var gulp = require("gulp"),
     source = require("vinyl-source-stream"),
     port = process.env.port || 8008;
 var dest_css = "./css/dist/";
-var src_sass = "./css/*.sass";
+var src_scss = "./css/*.scss";
 var dest_jsx = "./js/dist/";
 var src_jsx = "./js/*.jsx";
 var src_js = "./js/*.js";
 var src_js_components = "./js/components/*.js";
 
-gulp.task('sass',function() {
-	gulp.src(src_sass)
+gulp.task('scss',function() {
+	gulp.src(src_scss)
 
 	.pipe(plumber())
 	.pipe(sass()).pipe(gulp.dest(dest_css))
@@ -55,6 +55,7 @@ gulp.task('react', function () {
     })
         .transform(babelify)
         .bundle()
+
         .pipe(source('main.js'))
         .pipe(gulp.dest(dest_jsx))
         .pipe(connect.reload());
@@ -64,7 +65,7 @@ gulp.task('open',function(){
    var options = {
        url: 'http://localhost:' + port ,
    };
-    gulp.src('index.html')
+    gulp.src('panel.html')
     .pipe(open('',options));
 });
 //live reload
@@ -97,8 +98,8 @@ gulp.task('watch',function(){
     gulp.watch('*.html',['html']);
     gulp.watch(src_js,['js']);
     gulp.watch(src_js_components,['react']);
-    gulp.watch(src_sass,['sass']);
+    gulp.watch(src_scss,['scss']);
     gulp.watch('./css/*.css',['css'])
 });
-gulp.task('rs',['react','sass']);
-gulp.task('default',['react','sass','connect','open','watch']);
+gulp.task('rs',['react','scss']);
+gulp.task('default',['react','scss','connect','open','watch']);

@@ -1,0 +1,38 @@
+.dashboard{
+  width: 80%;
+  position:relative;
+  left: 10%;
+  height: 500px;
+}
+.collection-item{
+  cursor: pointer;
+}
+.App {
+  margin: 40px auto;
+  width: 480px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.d3 {
+  font: 10px sans-serif;
+  border: 1px solid #555;
+}
+
+.d3-point {
+  fill: #2B8FF3;
+  stroke: #1D5FA2;
+  stroke-width: 2;
+}
+
+.d3-tooltip-rect {
+  fill: #fff;
+  stroke: #555;
+  stroke-width: 1;
+}
+
+.d3-tooltip-text {
+  font-size: 18px;
+  font-weight: bold;
+}

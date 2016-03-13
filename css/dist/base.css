@@ -1,0 +1,236 @@
+html, body {
+  height: 100%;
+  overflow: auto;
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+ul, li {
+  padding: 0px;
+  margin: 0px; }
+
+.sp-row-height {
+  min-height: 100%;
+  overflow: auto;
+  height: auto;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  position: relative; }
+
+.sp-left-nav {
+  background-color: #3A3F40;
+  height: inherit;
+  min-height: 100%;
+  z-index: 2;
+  float: left;
+  overflow: auto;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  display: inline-block;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.sp-top-right-content-left-inbox-text {
+  padding: 0px;
+  padding-left: 90px;
+  display: inline-block;
+  float: left;
+  color: #000; }
+
+.sp-top-right-content {
+  display: inline-block;
+  color: black; }
+
+.sp-top-right-content-left-inbox-text {
+  padding: 0px;
+  padding-left: 90px;
+  display: inline-block; }
+
+.sp-top-right-content-right-inbox-text {
+  float: right;
+  display: inline-block;
+  color: black;
+  margin-right: 40px; }
+
+.notificon {
+  height: 50px;
+  width: 50px;
+  display: inline-block; }
+
+.infoicon {
+  height: 50px;
+  width: 50px;
+  display: inline-block; }
+
+.fa {
+  width: 68%;
+  position: relative;
+  display: inline-block;
+  float: left; }
+  .fa .fa-user-list-container {
+    float: left;
+    width: 27%;
+    background-color: white;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .fa .fa-user-list-container li.fa-user {
+      height: 60px;
+      width: inherit;
+      background-color: white;
+      padding: 0px;
+      margin: -15px; }
+      .fa .fa-user-list-container li.fa-user .fa-user-rep-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: yellow;
+        margin-left: 30px; }
+  .fa .fa-window {
+    float: right;
+    width: 73%;
+    height: 100vh;
+    background-color: #F5F5F5; }
+    .fa .fa-window .fa-window-top-strip {
+      min-height: 62px;
+      background-color: #FFFFFF; }
+    .fa .fa-window .fa-window-bottom-strip {
+      position: absolute;
+      bottom: 0px;
+      height: 80px;
+      background-color: #E6E5E3;
+      width: 100%;
+      display: table;
+      margin-bottom: 0 !important; }
+      .fa .fa-window .fa-window-bottom-strip .fa-window-bottom-input {
+        width: 70%;
+        min-height: 60px;
+        border-radius: 5px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        display: inline-block; }
+        .fa .fa-window .fa-window-bottom-strip .fa-window-bottom-input .send-area {
+          border: none;
+          border-radius: 4px;
+          padding-top: 10px;
+          resize: none !important;
+          outline: none !important;
+          background-color: white; }
+      .fa .fa-window .fa-window-bottom-strip .send-container {
+        overflow: auto;
+        position: relative; }
+        .fa .fa-window .fa-window-bottom-strip .send-container .send-color {
+          color: white;
+          margin-left: 10px;
+          margin-top: 8px; }
+      .fa .fa-window .fa-window-bottom-strip .circle-send {
+        position: relative;
+        float: right;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 20px;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background-color: #448E62; }
+
+.chat-container {
+  position: relative;
+  float: left;
+  margin-left: 7%;
+  width: 92%;
+  height: 100vh;
+  z-index: 10; }
+
+.sp-biz-info {
+  min-height: 540px;
+  width: 30%;
+  position: relative;
+  display: inline-block;
+  margin-left: 0%;
+  vertical-align: top;
+  float: right;
+  overflow-y: scroll; }
+  .sp-biz-info .sp-biz-serch-tab {
+    height: 125px;
+    background-color: #F5F5F5; }
+  .sp-biz-info .sp-biz-tab-content {
+    height: 100%; }
+
+.p5 {
+  width: 5.33333%;
+  margin-left: 0; }
+
+.header-nav {
+  position: relative;
+  left: 0px;
+  right: 0px;
+
+  display: inline-block; }
+
+/*Background set */
+.base-landing {
+  background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.signup-login-signup {
+  height: 350px;
+  width: 400px; }
+
+.signup-login-signin {
+  height: 300px;
+  width: 400px; }
+
+.container-login {
+  padding: 30px; }
+
+.signup-submit {
+  position: relative;
+  float: right; }
+
+@media only screen and (max-width: 993px) {
+  .p5 {
+    width: 6.33333%;
+    margin-left: 0; } }
+
+@media only screen and (max-width: 601px) {
+  .p5 {
+    width: 12.33333%;
+    margin-left: 0; } }
+
+.conta {
+  position: relative;
+  height: 65px;
+  width: 100%; }
+  .conta:hover {
+    background-color: #313636;
+    cursor: pointer; }
+  .conta .cb {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.padding-reset {
+  padding: 0px !important; }
+
+.margin-reset {
+  margin: 0px !important; }
+
+.pad-mar-reset {
+  padding: 0px !important;
+  margin: 0px !important; }
+
+.cursor {
+  cursor: pointer; }
+
+.row-reset {
+  margin-bottom: 0px; }
